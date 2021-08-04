@@ -2,37 +2,71 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
-	<title>.::Progrmação Web::.</title>
+	<title>DRs. do Hardware</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
+
 <body>
 	<div class="topo">
-	<img src="img/topo_aula.png" alt="topo">
+		<img src="img/topo_aula.png" alt="Topo">
 	</div>
 	<br><br><br><br>
-	<h1>TEC TREINAMENTOS - PROGRAMAÇÃO WEB COM PHP</h1><br>
+	<h1>DRs. DO HARDWARE</h1><hr><br>
 
 	<div class="pesquisa">
-		<h6>Prof. Leandro </h6>
+		<form method="get" action="recebe.php">
+			<h6>Aluno: Leandro Henrique</h6>
+			Pesquise no Site: &nbsp <input type="text" name="pesquisa">
+			<input type="submit" name="enviar" value="Pesquisar">
+		</form>
 	</div>
+
+	<h2>Manual de Uso - Introdução das Aplicações utilizadas</h2>
+	<p>No item acima, vamos realizar uma pesquisa onde as informações coletadas pela caixa de texto serão enviadas por um formulário (método POST) para uma página de tratamentos denominada receb.php.<br>Lá serão coletadas as variáveis que por meio de um Switch vão perceber qual o dado coleto e vão relacionar a uma determinada resposta.<br><br> No item abaixo também haverá uma coleta de informações via formulário, porém neste momento em método POST para esconder as informações da URL.<br>Essas informações serão convertidas em variáveis que serão tratadas em uma estrutura de decisão onde caso a renda registrada seja maior ou igual a 2.000 o crédit será aprovado, caso não o crédito será rcusado.<br></p>
 
 	<div class="conteudo">
-		Aqui vai o PRIMEIRO conteudo<br><br>
+		<fieldset>
+			<legend> Calcule aqui sua Possibilidade de Crédito</legend>
+				<br><form method="post" action="credito.php">
+					
+					Nome: &nbsp <input type="text" name="nome">
+					&nbsp &nbsp Renda: &nbsp <input type="number" name="renda">
+					<input type="submit" name="enviar" value="Calcular Crédito">
+					
 
-		Aqui vai o SEGUNDO conteudo<br><br>
+				</form><br>
 
-		Aqui vai o TERCEIRO conteudo<br><br>
+		</fieldset>
+	<br><br>
+
+	<h2>Introdução ao Formulário de Orçamento</h2>
+	<p>Para finalizar vamos utilizar o formulário abaixo para que seja possível realizar um orçamento de serviços.<br> Nesta simulação vamos apresentar uma opção de impressão da página de orçamentos.<br></p>
+
+	<fieldset>
+		<legend>Faça aqui um Orçamento de Serviços</legend>
+			<br><form method="POST" action="orcamento.php">
+
+				Data do orçamento:&nbsp <input type="date" name="data">
+				Tempo de garantia em meses:&nbsp <input type="number" name="garantia" min="1" max="6"><br><br>
+				Serviço a ser realizado:&nbsp 
+				<select name="servico">
+					<option>Formatação</option>
+					<option>Troca de peças</option>
+					<option>Outros</option>
+
+				</select>
+				
+				Descrição do aparelho:&nbsp<input type="text" name="aparelho">
+				Nome do cliente:&nbsp<input type="text" name="cliente"><br><br>
+				<input type="submit" name="enviar" value="Visualisar orçamento">
+			</form><br>
+	</fieldset>
 
 	</div>
-	
-	<div class="rodape">
-		<h2>TEC TREINAMENTOS - PROGRAMAÇÃO WEB COM PHP</h2>
-	</div>
 
-
-	<footer>
-		<h3>Todos os direitos reservados - Desenvolvido por Tec Treinamentos</h3>
-	</footer>
+		<footer>
+			<h3>Todos os direitos reservados - Desenvolvido por DRs. do Hardware (ltda)</h3>
+		</footer>
 
 </body>
 </html>

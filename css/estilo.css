@@ -1,35 +1,32 @@
-.topo{
-	text-align: center;
-	background-color: #87CEEB;
-	height: 200px;
-}
-
-h1{
-	text-align: center;
-	font-family: verdana;
-	text-shadow: 2px 2px 2px #87CEEB;
-}
-		
-.pesquisa{
-	text-align: right;
-}
-
-.conteudo{
-	text-align: center;
-	font-family: verdana;
-	font-size: 16px;
-}
-
- .rodape{
-	text-align: center;
-	font-family: verdana;
-	text-shadow: 2px 2px 2px #87CEEB;
-	color: #fff;
-	background-color: #87CEEB;
-}
-
-h3{
-	text-align: center;
-	font-family: verdana;
-		font-size: 18px;
-}
+		.topo{
+			text-align: center;
+			background-color: #87CEEB;
+			height: 200px;
+		}
+		h1{
+			text-align: center;
+			font-family: verdana;
+			text-shadow: 2px 2px 2px #87CEEB;
+		}
+		.pesquisa{
+			text-align: right;
+		}
+		.conteudo{
+			text-align: center;
+			font-family: verdana;
+			font-size: 16px;
+			padding: 20px;
+		}
+		.rodape{
+			text-align: center;
+			font-family: verdana;
+			text-shadow: 2px 2px 2px #000;
+			color: #fff;
+			background-color: #87CEEB;
+		}
+		h3{
+			text-align: center;
+			font-family: verdana;
+			font-size: 18px;
+		}
+	

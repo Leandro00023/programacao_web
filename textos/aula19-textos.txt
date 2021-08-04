@@ -1,0 +1,8 @@
+<h2>Manual de Uso - Introdução das Aplicações utilizadas</h2>
+	<p>No item acima, vamos realizar uma pesquisa onde as informações coletadas pela caixa de texto serão enviadas por um formulário (método POST) para uma página de tratamentos denominada receb.php.<br>Lá serão coletadas as variáveis que por meio de um Switch vão perceber qual o dado coleto e vão relacionar a uma determinada resposta.<br><br> No item abaixo também haverá uma coleta de informações via formulário, porém neste momento em método POST para esconder as informações da URL.<br>Essas informações serão convertidas em variáveis que serão tratadas em uma estrutura de decisão onde caso a renda registrada seja maior ou igual a 2.000 o crédit será aprovado, caso não o crédito será rcusado.<br></p>
+
+
+<h2>Introdução ao Formulário de Orçamento</h2>
+		<p>Para finalizar vamos utilizar o formulário abaixo para que seja possível realizar um orçamento de serviços.<br> Nesta simulação vamos apresentar uma opção de impressão da página de orçamentos.<br></p>
+
+
